@@ -1,0 +1,30 @@
+<!-- sldsValidatorIgnore -->
+<template>
+                <!-- @api demo -->
+    <lightning-card title="API Demo">
+        <c-child-component item-name="Value changed"></c-child-component>
+        <lightning-button title="API button" label="click me" onclick={handleclick}></lightning-button>
+    </lightning-card>
+                <!-- @track demo -->
+    <lightning-card title="Track Demo">
+        <lightning-input type="text" name="firstName" label="First Name" onchange={handlechangeevent}></lightning-input>
+        <lightning-input type="text" name="lastName" label="Last Name" onchange={handlechangeevent}></lightning-input>
+    </lightning-card>
+    <lightning-card title="Updated Values">
+        <h3>First Name: {fullName.firstName}</h3><br>
+        <h3>Last NAme: {fullName.lastName}</h3>
+    </lightning-card>
+                    <!-- @wire demo -->
+    <lightning-card title="Wire Demo">
+        <div style="height: 200px;">
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                columns={columns}>
+
+            </lightning-datatable>
+            
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Edit Record" variant="base">
+        <lightning-record-edit-form density="compact" object-api-name={objectApiName} onsubmit={handleSubmit} onsuccess={handleSuccess} onerror={handleError} record-id={recordId}>
+            <div class="slds-box slds-theme_default">
+                <lightning-input-field  field-name="Id"  value={contactId} variant="label-inline"></lightning-input-field>
+                <template for:each={fields} for:item="field">
+                    <lightning-input-field key={field.Id} field-name={field}  variant="label-inline"></lightning-input-field>
+                </template>
+                    <!-- <lightning-input-field  field-name={lastName}  variant="label-inline"></lightning-input-field>
+                    <lightning-input-field  field-name={email}  variant="label-inline"></lightning-input-field>
+                    <lightning-input-field  field-name={phone}  variant="label-inline"></lightning-input-field>
+                    <lightning-input-field  field-name={leadSource}  variant="label-inline"></lightning-input-field> -->
+                    <lightning-button 
+                      variant="base"
+                      label="Save" 
+                      type="submit" 
+                    ></lightning-button>
+                
+            </div>
+        </lightning-record-edit-form>
+
+    </lightning-card>
+</template>

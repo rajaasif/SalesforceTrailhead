@@ -1,0 +1,32 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+          Pub Component
+      </div>
+      <div slot="actions">
+    
+      </div>
+      <div slot="footer">
+    
+      </div>
+      <div>
+        <lightning-button 
+        class="slds-p-horizontal_small"
+          variant="brand"
+          label="Add +10" 
+          onclick={handleIncrement} 
+        ></lightning-button>
+        <lightning-button 
+          class="slds-p-horizontal_small"
+          variant="brand"
+          label="Sub -10" 
+          onclick={handleDecrement} 
+        ></lightning-button>
+        <lightning-button 
+          variant="brand"
+          label="Mult X2" 
+          onclick={handleMultiplication} 
+        ></lightning-button>
+      </div>
+    </lightning-card>
+</template>

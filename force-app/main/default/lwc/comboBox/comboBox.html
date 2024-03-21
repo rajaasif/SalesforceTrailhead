@@ -1,0 +1,16 @@
+<template>
+    <lightning-combobox name="progress" label="Contacts" value={value} placeholder="Select Contact" options={options}
+        onchange={handleChange}></lightning-combobox>
+    <div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+                <td>{value}</td>
+                <td>{name}</td>
+            </tr>
+        </table>
+    </div>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Record View Form" variant="base">
+        <lightning-record-view-form
+          density="compact"
+          object-api-name={objectApiName}
+          record-id={recordId}
+        >
+          <div class="slds-box slds-theme_default" >
+            <template for:each={fields} for:item="field" >
+                
+                <lightning-output-field key={recordId} field-name={field} variant="label-inline"></lightning-output-field>
+            </template>
+          </div>
+        </lightning-record-view-form>
+    </lightning-card>
+</template>

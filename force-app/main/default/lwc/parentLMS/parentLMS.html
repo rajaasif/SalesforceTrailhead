@@ -1,0 +1,11 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base" title="Parent Card">
+        <p class="slds-text-align_center">Count: {count}</p>
+        <c-child-l-m-s
+            onaddition={handleAdditon}
+            onsubtraction={handleSubtraction}
+            onmultiplication={handleMultiplication}
+            >
+        </c-child-l-m-s>
+    </lightning-card>
+</template>

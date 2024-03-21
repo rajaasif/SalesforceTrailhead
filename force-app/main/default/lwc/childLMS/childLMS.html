@@ -1,0 +1,22 @@
+<template>
+  <lightning-card icon-name="standard:account" variant="base">
+    <div slot="title">
+      Child Card
+    </div>
+    <div slot="actions">
+
+    </div>
+    <div slot="footer">
+
+    </div>
+    <div>
+      <lightning-button class="slds-p-horizontal_medium" variant="base" label="Plus" onclick={handleAddition}
+        icon-name="utility:plus"></lightning-button>
+      <lightning-button class="slds-p-horizontal_medium" variant="base" label="Minus" icon-name="utility:dash"
+        onclick={handleSubtraction}></lightning-button>
+        <lightning-button variant="base" label="10" icon-name="utility:close" onclick={handleMultiplication}></lightning-button>
+        
+    </div>
+  </lightning-card>
+
+</template>
